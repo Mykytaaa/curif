@@ -1,0 +1,8 @@
+external-api:
+  open-exchange-rates-link-api: https://openexchangerates.org/api
+  gif-link-api: https://api.giphy.com/v1/gifs/random
+  open-exchange-rates-api-key: ${OPEN_EXCHANGE_API_KEY}
+  gif-api-key: ${GIF_API_KEY}
+  currency: EUR
+  current-date: "#{T(java.time.LocalDate).now().toString()}"
+  yesterday: "#{T(java.time.LocalDate).now().minusDays(1).toString()}"
